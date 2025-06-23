@@ -16,7 +16,7 @@ userRouter.post('/update-profile',uplaod.single('image'),authUser,updateUserProf
 userRouter.post('/book-appointment',authUser,bookAppointment);
 userRouter.get('/appointments',authUser,listAppointment);
 userRouter.post('/cancel-appointment',authUser,cancelAppointment);
-userRouter.post('/payment-bkash',authUser,OnlinePayment);
+userRouter.post('/online-payment',authUser,OnlinePayment);
 userRouter.post('/payment/success/:tranId',handleSuccess);
 userRouter.post('/payment/fail',handleFail);
 
