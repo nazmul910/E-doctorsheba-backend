@@ -384,7 +384,7 @@ const handleSuccess = async (req,res) =>{
       payment:true,
       message:"Payment successfull",
     });
-    res.redirect('http://localhost:5173/my-appintments')
+    res.redirect('https://frontend-e-doctor-sheba.vercel.app/my-appintments')
 
   } catch (error) {
     console.log(error);
@@ -396,7 +396,7 @@ const handleSuccess = async (req,res) =>{
 }
 
 const handleFail = async (req,res) =>{
-  res.redirect('http://localhost:5173/failed')
+  res.redirect('https://frontend-e-doctor-sheba.vercel.app/failed')
 }
 
 export {userRegister,userLogin,getProfileData,updateUserProfile,bookAppointment,listAppointment,cancelAppointment,OnlinePayment,handleSuccess,handleFail}
